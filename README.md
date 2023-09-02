@@ -1,6 +1,7 @@
-# Thumbnail Generation Lamdba
+# Data Pipeline build using Serverless + Event Driven Architecture 
 
-This is the repository for Youtube Video, on how to use Terraform to create AWS Lambda and configure AWS S3 trigger
+AWS Services are being deployed in us-east-1 region, didn't have time to optimize for Availability, Security, Scalability etc.
+Leveraged Terraform for IAC and Python for scripting.
 
 ## Terraform Commands
 ```bash
