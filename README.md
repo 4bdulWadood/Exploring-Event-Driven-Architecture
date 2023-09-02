@@ -3,6 +3,13 @@
 AWS Services are being deployed in us-east-1 region, didn't optimize for Availability, Security, Scalability etc.
 Leveraged Terraform for Infrastructure as code and Python for scripting.
 
+## Change the destination email address for the SNS Topic in the main.tf file. 
+  resource "aws_sns_topic_subscription" "quicksight_report_subscription" {
+    topic_arn = aws_sns_topic.quicksight_report_topic.arn
+    protocol  = "email"
+    endpoint  = "a1syed@torontomu.ca"
+  }
+
 ## Terraform Commands
 ```bash
 $ terraform init
