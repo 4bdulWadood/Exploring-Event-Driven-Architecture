@@ -11,7 +11,6 @@ Leveraged Terraform for IAC and Python for scripting.
     topic_arn = aws_sns_topic.quicksight_report_topic.arn<br>
     protocol  = "email"
     protocol  = "email"<br>
-    endpoint  = "a1syed@torontomu.ca"
     endpoint  = "a1syed@torontomu.ca"<br>
   }
   }<br>
