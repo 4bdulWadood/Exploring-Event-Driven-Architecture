@@ -4,11 +4,11 @@ AWS Services are being deployed in us-east-1 region, didn't optimize for Availab
 Leveraged Terraform for Infrastructure as code and Python for scripting.
 
 ## Change the destination email address in the main.tf file. 
-  resource "aws_sns_topic_subscription" "quicksight_report_subscription" {
-    topic_arn = aws_sns_topic.quicksight_report_topic.arn
-    protocol  = "email"
-    endpoint  = "a1syed@torontomu.ca"
-  }
+  resource "aws_sns_topic_subscription" "quicksight_report_subscription" {<br>
+    topic_arn = aws_sns_topic.quicksight_report_topic.arn<br>
+    protocol  = "email"<br>
+    endpoint  = "a1syed@torontomu.ca"<br>
+  }<br>
 
 ## Terraform Commands
 ```bash
