@@ -1,6 +1,6 @@
 # Data Pipeline built using Serverless + Event Driven Architecture 
 
-AWS Services are being deployed in us-east-1 region, didn't have time to optimize for Availability, Security, Scalability etc.
+AWS Services are being deployed in us-east-1 region, didn't optimize for Availability, Security, Scalability etc.
 Leveraged Terraform for IAC and Python for scripting.
 
 
