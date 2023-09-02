@@ -1,7 +1,7 @@
 # Data Pipeline built using Serverless + Event Driven Architecture 
 
 AWS Services are being deployed in us-east-1 region, didn't have time to optimize for Availability, Security, Scalability etc.
-Leveraged Terraform for IAC and Python for scripting.
+Leveraged Terraform for Infrastructure as code and Python for scripting.
 
 ## Terraform Commands
 ```bash
