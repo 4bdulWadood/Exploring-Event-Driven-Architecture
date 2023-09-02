@@ -1,7 +1,20 @@
-# Thumbnail Generation Lamdba
+# Data Pipeline built using Serverless + Event Driven Architecture 
 
-This is the repository for Youtube Video, on how to use Terraform to create AWS Lambda and configure AWS S3 trigger
+AWS Services are being deployed in us-east-1 region, didn't have time to optimize for Availability, Security, Scalability etc.
+Leveraged Terraform for IAC and Python for scripting.
 
+
+## Change the destination email address in the main.tf file. 
+  resource "aws_sns_topic_subscription" "quicksight_report_subscription" {
+  resource "aws_sns_topic_subscription" "quicksight_report_subscription" {<br>
+    topic_arn = aws_sns_topic.quicksight_report_topic.arn
+    topic_arn = aws_sns_topic.quicksight_report_topic.arn<br>
+    protocol  = "email"
+    protocol  = "email"<br>
+    endpoint  = "a1syed@torontomu.ca"
+    endpoint  = "a1syed@torontomu.ca"<br>
+  }
+  }<br>
 ## Terraform Commands
 ```bash
 $ terraform init
